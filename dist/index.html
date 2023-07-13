@@ -1,4 +1,14 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Personal Home Page  Template</title>
+  <meta><link rel='stylesheet' href='https://unpkg.com/jest-lite@1.0.0-alpha.4/dist/prettify.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,8 +24,8 @@
         <nav aria-label="Main Site Links.">
           <ul class="nav-links">
              <li><a href="./home.html" class="active">Home</a></li>
-            <li><a href="https://adenikemyweb.netlify.app/">About</a></li>
-            <li class="end"><a href="https://sariatadenike-space-exploration.netlify.app/">My Project</a></li>
+            <li><a href="./aboutMe.html">About</a></li>
+            <li class="end"><a href="./myProject.html">My Project</a></li>
             <li><a href="./myContact.html">Contact</a></li>
           </ul>
         </nav>
@@ -46,18 +56,18 @@
          <p>Here are some of my works:</p>
         <ul>
           <li><a href="">Link to my github</a></li>
-          <li><a href="https://sariatadenikedigitalbusinesscard.netlify.app/">Link to my netlify</a></li>
+          <li><a href="">Link to my netlify</a></li>
         </ul>
       </div>
       
       <iframe src="https://www.youtube.com/embed/Dg_HrTN3uyY" title="Top 10 Inventions That Will Change Our World" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-Please leave a message;
-<ul id="list"></ul>
-<input id="text"></input>
-<button id="button-submit">Submit</button> 
-
       
+      <p>Please leave a message;</p>
+      <ul id="list"></ul>
+      <input id="text"></input>
+      <button id="button-submit">Submit</button> 
+
+
       <footer class="c-site-footer">
         <span class="footer-right">&copy;2023 Adenike Sariat&trade;</span>
         <a href="mailto:adenike.sariat@outlook.com"><img src="https://i.postimg.cc/J4tL8Qhp/transparent-outlook-icon-2.png" height="20" width="25" alt="OutlookLogo">My Outlook here</a>
@@ -67,24 +77,11 @@ Please leave a message;
   </main>
     <aside id="tests" aria-label="Test Readout." aria-live="polite" style="overflow:auto">
 </aside>
-
-<script>function convertToNumber(value) {
-  // Convert a string value to a number if possible
-  let number_value = Number(value);
-  if (Number.isNaN(number_value)) {
-    return 0
-  } else {
-    return number_value
-  }
-}
-
-
-
-document.getElementById('button-submit').addEventListener('click', (event) => {
-  let element_list = document.getElementById('list');
-  element_list.innerText = document.getElementById('text').value;
-
-});</script>
+</body>
+</html>
+<!-- partial -->
+  <script src='https://unpkg.com/jest-lite@1.0.0-alpha.4/dist/core.js'></script>
+<script src='https://unpkg.com/jest-lite@1.0.0-alpha.4/dist/prettify.js'></script><script  src="./script.js"></script>
 
 </body>
 </html>
