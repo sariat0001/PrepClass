@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - Personal Home Page  Template</title>
-  <meta><link rel='stylesheet' href='https://unpkg.com/jest-lite@1.0.0-alpha.4/dist/prettify.css'><link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -48,7 +38,7 @@
       <div class="about-details">
         <h1>About Me</h1>      
         <p>
-          I am a graduate of Health Information and Bio-Statistics.           I'm keen about learning positively, as I switch career             into  the Tech world to build a niche for myself and               carve a good  name for my brand. Though, it has not been           easy as a beginner, but I'm optimistic. Looking forward             to acquire more skills in bringing my goals to reality.             I'm an easy going lady. I love travelling and cooking.
+          I'm a graduate of Health Information and Bio-Statistics.           I'm keen about learning positively, as I switch career             into  the Tech world to build a niche for myself and               carve a good  name for my brand. Though, it has not been           easy as a beginner, but I'm optimistic. Looking forward             to acquire more skills in bringing my goals to reality.             I'm an easy going lady. I love travelling and cooking.
         </p>
       </div>
       
@@ -61,6 +51,12 @@
       </div>
       
       <iframe src="https://www.youtube.com/embed/Dg_HrTN3uyY" title="Top 10 Inventions That Will Change Our World" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+Please leave a message;
+<ul id="list"></ul>
+<input id="text"></input>
+<button id="button-submit">Submit</button> 
+
       
       <footer class="c-site-footer">
         <span class="footer-right">&copy;2023 Adenike Sariat&trade;</span>
@@ -71,11 +67,24 @@
   </main>
     <aside id="tests" aria-label="Test Readout." aria-live="polite" style="overflow:auto">
 </aside>
-</body>
-</html>
-<!-- partial -->
-  <script src='https://unpkg.com/jest-lite@1.0.0-alpha.4/dist/core.js'></script>
-<script src='https://unpkg.com/jest-lite@1.0.0-alpha.4/dist/prettify.js'></script><script  src="./script.js"></script>
+
+<script>function convertToNumber(value) {
+  // Convert a string value to a number if possible
+  let number_value = Number(value);
+  if (Number.isNaN(number_value)) {
+    return 0
+  } else {
+    return number_value
+  }
+}
+
+
+
+document.getElementById('button-submit').addEventListener('click', (event) => {
+  let element_list = document.getElementById('list');
+  element_list.innerText = document.getElementById('text').value;
+
+});</script>
 
 </body>
 </html>
